@@ -1,0 +1,31 @@
+<p>
+Hello <b>
+    <span id="person">Chuck</span>
+</b> there.     
+</p> 
+<p>
+    <a href="#" onclick="ganti()">test</a>
+</p>
+<button>clik me</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+st = document.getElementById('person').innerHTML;
+alert('Hi there ' + st);
+document.getElementById('person').innerHTML = 'Joseph';
+function ganti(){
+    if(document.getElementById('person').innerHTML=="hans"){
+    document.getElementById('person').innerHTML="adi";
+}else{
+    document.getElementById('person').innerHTML="hans";
+
+}
+
+}
+$(document).ready(function(){
+  $("button").click(function(){
+    $("a").hide();
+  });
+});
+</script>
